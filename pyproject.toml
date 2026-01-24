@@ -1,0 +1,22 @@
+# pyproject.toml
+[project]
+name = "ai-audio-journey"
+version = "0.1.0"
+description = "Learning AI (ML/DL/LLMs) with an audio + QA + CI/CD focus."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
